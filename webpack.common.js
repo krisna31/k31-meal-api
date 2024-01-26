@@ -7,6 +7,14 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
   },
+  devServer: {
+    client: {
+      overlay: {
+        errors: true,
+        warnings: false,
+      },
+    },
+  },
   module: {
     rules: [
       {
